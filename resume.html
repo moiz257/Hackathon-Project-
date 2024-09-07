@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume with Toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="resume-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="s.jpg" alt="">
+            </div>
+            <h1>Moiz Ali Kamal</h1>
+            <p>Restaurant Manager</p>
+            <div class="about">
+                <h2>ABOUT</h2>
+                <p>Phone: 405747508</p>
+                <p>Email: moizali2577@gmail.com</p>
+                <p>Location: Karachi, Pakistan</p>
+                <p>Prime Plate Restaurant</p>
+            </div>
+            <div class="skills">
+                <h2>SKILLS</h2>
+                <p>Leadership</p>
+                <p>Team Management</p>
+                <p>Customer Service</p>
+                <p>Inventory Management</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2>ACHIEVEMENTS</h2>
+                <button onclick="toggleSection('achievements', this, 'Achievements')">Hide Achievements</button>
+                <div id="achievements" class="content">
+                    <p>Awarded "Best Restaurant Manager" in 2023</p>
+                    <p>Increased overall customer satisfaction by 20% in 6 months</p>
+                    <p>Reduced operational costs by 15% through efficient inventory management</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>EDUCATION</h2>
+                <button onclick="toggleSection('education', this, 'Education')">Hide Education</button>
+                <div id="education" class="content">
+                    <p>Bachelor of Business Administration (BBA)</p>
+                    <p>University of Karachi</p>
+                    <p>Graduation Date: 2020-09-06</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>EXPERIENCES</h2>
+                <button onclick="toggleSection('experience', this, 'Experience')">Hide Experience</button>
+                <div id="experience" class="content">
+                    <p>Restaurant Manager</p>
+                    <p>Prime Plate Restaurant, Karachi</p>
+                    <p>Duration: 2021-09-04 to Present</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Managed daily operations, ensuring high customer satisfaction</li>
+                        <li>Trained and supervised staff to maintain service excellence</li>
+                        <li>Implemented cost-saving strategies and inventory controls</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>PROJECTS</h2>
+                <button onclick="toggleSection('projects', this, 'Projects')">Hide Projects</button>
+                <div id="projects" class="content">
+                    <p>Redesign of Restaurant Menu</p>
+                    <p>Led a project to redesign the restaurant's menu, improving sales by 10%</p>
+                    <p>Developed an online ordering system to enhance customer convenience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
